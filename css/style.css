@@ -29,18 +29,57 @@ img {
 /*SUPER-INFO*/
 
 .super-info-bg {
-    max-width: 960px;
-    padding: 10px;
     background-color: #132AB2;
     color: white;
 }
 
 .super-info {
+    max-width: 960px;
+    padding-top: 10px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.super-info p, .super-info a {
+    margin: 0 10px 10px;
 }
 
 .super-info a {
     color: white;
+}
+
+/*MENU NAV*/
+
+.menu-bg {
+    background-color: #2C70FF;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+
+
+.logo-blog a{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 10px;
 }
