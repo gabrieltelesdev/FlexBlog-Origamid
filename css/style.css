@@ -83,3 +83,16 @@ img {
     font-weight: bold;
     margin: 0 10px;
 }
+
+/*Introdução*/
+
+.introducao {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.introducao h1 {
+    font-size: 3em;
+    line-height: 1;
+    padding: 60px 10px;
+}
