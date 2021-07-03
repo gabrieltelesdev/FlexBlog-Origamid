@@ -1,6 +1,13 @@
-body, h1, h2, p, ul, li, a {
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,7 +49,8 @@ img {
     flex-wrap: wrap;
 }
 
-.super-info p, .super-info a {
+.super-info p,
+.super-info a {
     margin: 0 10px 10px;
 }
 
@@ -63,21 +71,27 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
 }
 
-.menu ul li a{
-    font-size: 20px;
+.menu ul li a {
+    font-size: 1.25em;
     color: white;
     padding: 10px;
+    display: block;
+}
+
+.menu nav a:hover {
+    color: #2230CA;
 }
 
 
 
-.logo-blog a{
+.logo-blog a {
     color: white;
     font-size: 36px;
     font-weight: bold;
@@ -209,7 +223,7 @@ img {
     display: block;
 }
 
-.preco-item sup{
+.preco-item sup {
     font-size: 1.5rem;
 }
 
@@ -254,10 +268,12 @@ img {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .preco-item:nth-child(3){
+
+    .preco-item:nth-child(3) {
         order: -2;
     }
-    .preco-item:nth-child(2){
+
+    .preco-item:nth-child(2) {
         order: -1;
     }
 }
@@ -273,7 +289,7 @@ img {
 
 .qualidade-item {
     flex: 1 1 300px;
-    margin:20px 10px;
+    margin: 20px 10px;
 }
 
 .qualidade-item h2 {
@@ -312,4 +328,84 @@ img {
 .qualidade-item p {
     font-size: 1.25em;
     line-height: 1.4em;
+    color: #7C7C7C;
+}
+
+/*NEWSLETTER*/
+
+.newsletter {
+    background-color: #F7F7F7;
+    padding: 60px calc((100% - 960px) /2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info {
+    flex: 1 1 240px;
+    margin-left: 10px;
+}
+
+.newsletter-info h1 {
+    font-size: 3em;
+    color: #A4A4A4;
+}
+
+.newsletter-info p {
+    max-width: 240px;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #7C7C7C;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex: 2 1 240px;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.newsletter-form input {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    flex: 3 1 260px;
+    border: 4px solid #3070FF;
+    color: #757575;
+    font-size: 1.25em;
+    font-style: italic;
+    padding: 15px 10px;
+
+}
+
+.newsletter-form button {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    flex: 3 1 260px;
+    background-color: #3070FF;
+    color: #FFFFFF;
+    font-size: 2.25em;
+    font-weight: bold;
+    padding: 15px 10px;
+    border: 0ex;
+}
+
+@media (max-width: 700px) {
+    .newsletter-form button {
+        font-size: 1.5em;
+    }
+}
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    background: #2c70ff;
+    height: 200px;
+    align-items: center;
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 2.25em;
+    color: #122ab2;
 }
